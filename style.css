@@ -63,3 +63,16 @@ h2 {
   padding-left: 0px;
   list-style: none;
 }
+
+.content-table tbody tr.active-row td > ul > li:nth-of-type(even) {
+  border-top: 1px groove black;
+  border-bottom: 1px groove black;
+}
+
+.content-table tbody tr.active-row td > ul > li:last-of-type {
+  border-bottom: 1px groove black;
+}
+
+.content-table tbody tr.active-row td:nth-of-type(11) > ul > li {
+  border-style: hidden;
+}

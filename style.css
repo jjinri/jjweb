@@ -1,13 +1,19 @@
+body {
+  background-color: rgb(247, 247, 229);
+}
+
 * {
   font-family: sans-serif; /* Change your font family */
 }
 
 h1 {
-  margin: 1rem 0 0.4rem 1rem;
+  font-size: 24px;
+  margin: 1rem 0 0.2rem 1rem;
 }
 
 h2 {
-  margin: 1rem 0 0.4rem 1rem;
+  font-size: 20px;
+  margin: 1rem 0 0.2rem 1rem;
 }
 
 .content-table {
@@ -25,15 +31,19 @@ h2 {
   color: #ffffff;
   text-align: left;
   font-weight: bold;
+  font-size: 10px;
 }
 
 .content-table th,
 .content-table td {
   padding: 12px 15px;
+  font-size: 10px;
+  width:max-content;
 }
 
 .content-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ebe2e2;
+  background-color: #e9c2c2;
 }
 
 .content-table tbody tr:nth-of-type(even) {
@@ -62,6 +72,8 @@ h2 {
 .content-table tbody td > ul > li {
   padding-left: 0px;
   list-style: none;
+  padding: 1rem 0rem 0rem 0rem;
+  width:fit-content;
 }
 
 .content-table tbody tr.active-row td > ul > li:nth-of-type(even) {
@@ -75,4 +87,32 @@ h2 {
 
 .content-table tbody tr.active-row td:nth-of-type(11) > ul > li {
   border-style: hidden;
+}
+
+button {
+  width: 80px;
+  height: 40px;
+  background-color: #004fff;
+  color:beige;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+
+  box-shadow: 0px 4px 16px rgba(0, 79, 255, 0.3);
+  position: relative;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: rgba(0, 79, 255, 0.8);;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 79, 255, 0.6);
 }
